@@ -1,6 +1,8 @@
 
 /* Krona One Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+
 
 /* Universal Selector */
 * {
@@ -22,25 +24,21 @@
 /************************* Navigation Bar ***************************/
 nav{
     background-color: #EB8704;
-    padding: 10px;
+    padding: 10px 0px;
 }
 .full-nav{
     display: flex;
     align-items: center;
+    gap: 70px;
 }
 .left-nav{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 60px;
+    gap: 7px;
 }
-.right-nav{
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-    width: 70%;
-    /* background-color: aqua; */
-}
+
 /*  */
 .mann-img{
     height: 51.4px;
@@ -61,22 +59,49 @@ nav{
     font-size: 18px;
     font-family: "Krona One", sans-serif;
 }
+.right-nav{
+    display: flex;
+    gap: 75px;
+    justify-content: end;
+    width: 70%;
+    position: relative;
+    /* background-color: aqua; */
+}
+.search-box{
+    position: relative;
+}
+#search{
+    width: 305px;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #EB8704;
+    padding: 8px 0px;
+}
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: white;
+}
 .overall-anchor-icon-login{
     display: flex;
-    gap: 20px;
+    gap: 35px;
 }
 .anchor{
     font-size: 18px;
     display: flex;
-    gap: 20px;
+    gap: 34px;
     padding: 5px;
+    font-family: "Tiro Bangla", serif;
 }
 .icon-login{
     display: flex;
-    gap: 20px;
+    gap: 29px;
     align-items: center;
 }
 .login{
+    font-family: "Tiro Bangla", serif;
     background-color: white;
     border-radius: 10px;
     font-size: 18px;
