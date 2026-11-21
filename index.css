@@ -31,6 +31,7 @@ nav{
     align-items: center;
     gap: 70px;
 }
+/* left-side nav */
 .left-nav{
     display: flex;
     justify-content: start;
@@ -38,8 +39,7 @@ nav{
     padding-left: 60px;
     gap: 7px;
 }
-
-/*  */
+/* mann vaasam image */
 .mann-img{
     height: 51.4px;
     width: 78px;
@@ -55,10 +55,12 @@ nav{
     font-size: 6px;
     text-align: center;
 }
+/* mann vaasam title */
 .mann{
     font-size: 18px;
     font-family: "Krona One", sans-serif;
 }
+/* right-side nav */
 .right-nav{
     display: flex;
     gap: 75px;
@@ -67,9 +69,11 @@ nav{
     position: relative;
     /* background-color: aqua; */
 }
+/* serach box + search icon*/
 .search-box{
     position: relative;
 }
+/* searchbox */
 #search{
     width: 305px;
     border: none;
@@ -79,16 +83,19 @@ nav{
     padding: 8px 0px;
     outline: none;
 }
+/* serach icon */
 .search-icon {
     position: absolute;
     top: 8px;
     left: 10px;
     color: white;
 }
+/* overall anchor + icon + login button */
 .overall-anchor-icon-login{
     display: flex;
     gap: 35px;
 }
+/* anchor tags */
 .anchor{
     font-size: 18px;
     display: flex;
@@ -96,12 +103,8 @@ nav{
     padding: 5px;
     font-family: "Tiro Bangla", serif;
 }
-.icon-login{
-    display: flex;
-    gap: 29px;
-    align-items: center;
-}
-.login{
+/* login-button */
+.login-button{
     font-family: "Tiro Bangla", serif;
     background-color: white;
     border-radius: 10px;
@@ -109,4 +112,72 @@ nav{
     width: 142px;
     text-align: center;
     padding: 5px;
+    border: none;
+}
+/************************************ Tablet screen ****************************************/
+@media only screen and (min-width:601px) and (max-width:900px) {
+    .full-nav{
+        gap: 260px;
+    }
+    /* left-side nav */
+    .left-nav{
+        padding-left: 15px;
+        gap: 3px;
+    }
+    /* mann vaasam image */
+    .mann-img{
+        height: 31px;
+        width: 47px;
+    }
+    .mann-txt-1{
+        border-radius: 9px;
+        padding: 2px 0px;
+        width: 42px;
+        font-size: 4px;
+    }
+    /* mann vaasam title */
+    .mann{
+        font-size: 10px;
+    }
+    /* right-side nav */
+    .right-nav{
+        gap: 20px;
+        width: 33%;
+    }
+/* searchbox */
+#search{
+    width: 140px;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding: 0px 0px;
+    outline: none;
+}
+/* serach icon */
+.search-icon {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    color: white;
+    font-size: 8px;
+}
+/* overall anchor + icon + login button */
+.overall-anchor-icon-login{
+    display: flex;
+    gap: 15px;
+}
+/* anchor tags */
+.anchor{
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+/* login-button */
+.login-button{
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 400;
+    width: 86px;
+}
 }
