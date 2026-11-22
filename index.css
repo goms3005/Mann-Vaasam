@@ -117,7 +117,7 @@ nav{
 /************************************ Tablet screen ****************************************/
 @media only screen and (min-width:601px) and (max-width:900px) {
     .full-nav{
-        gap: 260px;
+        gap: 300px;
     }
     /* left-side nav */
     .left-nav{
@@ -141,8 +141,9 @@ nav{
     }
     /* right-side nav */
     .right-nav{
+        padding-right: 10px;
         gap: 20px;
-        width: 33%;
+        width: 32%;
     }
 /* searchbox */
 #search{
@@ -150,7 +151,6 @@ nav{
     border-radius: 6px;
     border: 1px solid white;
     padding: 0px 0px;
-    outline: none;
 }
 /* serach icon */
 .search-icon {
@@ -163,7 +163,7 @@ nav{
 /* overall anchor + icon + login button */
 .overall-anchor-icon-login{
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 /* anchor tags */
 .anchor{
