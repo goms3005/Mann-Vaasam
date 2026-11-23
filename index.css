@@ -12,9 +12,8 @@
     scroll-behavior: smooth;
 }
 /* Variables */
-.root {
+:root {
     --color: #6D3501;
-    --font: "Afacad", sans-serif;
 }
 /* Overall Container */
 .container {
@@ -29,26 +28,25 @@ nav{
 .full-nav{
     display: flex;
     align-items: center;
-    gap: 70px;
+    justify-content: space-between;
+    padding: 0px 50px;
 }
 /* left-side nav */
 .left-nav{
     display: flex;
-    justify-content: start;
     align-items: center;
-    padding-left: 60px;
     gap: 7px;
 }
 /* mann vaasam image */
 .mann-img{
     height: 51.4px;
     width: 78px;
-    display: flex;
+    display: block;
 }
 .mann-txt-1{
     color: white;
     font-family: "Krona One", sans-serif;
-    background-color: #6D3501;
+    background-color: var(--color);
     border-radius: 15px;
     padding: 2px 0px;
     width: 70px;
@@ -63,11 +61,9 @@ nav{
 /* right-side nav */
 .right-nav{
     display: flex;
-    gap: 75px;
+    gap: 50px;
     justify-content: end;
-    width: 70%;
-    position: relative;
-    /* background-color: aqua; */
+    align-items: center;
 }
 /* serach box + search icon*/
 .search-box{
@@ -76,24 +72,26 @@ nav{
 /* searchbox */
 #search{
     width: 305px;
-    border: none;
     border-radius: 10px;
     border: 2px solid white;
     background-color: #EB8704;
-    padding: 8px 0px;
     outline: none;
+    padding: 8px 10px 8px 35px;
+    color: white;
 }
 /* serach icon */
 .search-icon {
     position: absolute;
-    top: 8px;
     left: 10px;
     color: white;
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* overall anchor + icon + login button */
 .overall-anchor-icon-login{
     display: flex;
-    gap: 35px;
+    gap: 25px;
+    align-items: center;
 }
 /* anchor tags */
 .anchor{
@@ -115,13 +113,13 @@ nav{
     border: none;
 }
 /************************************ Tablet screen ****************************************/
-@media only screen and (min-width:601px) and (max-width:900px) {
+@media only screen and (min-width:617px) and (max-width:900px) {
     .full-nav{
-        gap: 300px;
-    }
+        padding: 0px 20px;
+        gap: 15px;
+    } 
     /* left-side nav */
     .left-nav{
-        padding-left: 15px;
         gap: 3px;
     }
     /* mann vaasam image */
@@ -141,21 +139,22 @@ nav{
     }
     /* right-side nav */
     .right-nav{
-        padding-right: 10px;
         gap: 20px;
-        width: 32%;
+        flex-shrink: 0;
     }
 /* searchbox */
 #search{
     width: 140px;
     border-radius: 6px;
     border: 1px solid white;
-    padding: 0px 0px;
+    padding: 6px 8px 6px 25px;
+    font-size: 11px;
 }
 /* serach icon */
 .search-icon {
     position: absolute;
-    top: 6px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 8px;
     color: white;
     font-size: 8px;
