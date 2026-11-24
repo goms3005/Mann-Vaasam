@@ -61,17 +61,22 @@ nav{
 /* right-side nav */
 .right-nav{
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: end;
     align-items: center;
+    flex: 1;
+    min-width: 0;
 }
 /* serach box + search icon*/
 .search-box{
     position: relative;
+    flex: 1;
+    max-width: 305px;
+    min-width: 120px;
 }
 /* searchbox */
 #search{
-    width: 305px;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid white;
     background-color: #EB8704;
@@ -86,6 +91,10 @@ nav{
     color: white;
     top: 50%;
     transform: translateY(-50%);
+}
+#search::placeholder{
+    color: white;
+    opacity: 0.8; 
 }
 /* overall anchor + icon + login button */
 .overall-anchor-icon-login{
@@ -106,6 +115,7 @@ nav{
     font-family: "Tiro Bangla", serif;
     background-color: white;
     border-radius: 10px;
+    cursor: pointer;
     font-size: 18px;
     width: 142px;
     text-align: center;
@@ -113,7 +123,7 @@ nav{
     border: none;
 }
 /************************************ Tablet screen ****************************************/
-@media only screen and (min-width:617px) and (max-width:900px) {
+@media only screen and (min-width:601px) and (max-width:900px) {
     .full-nav{
         padding: 0px 20px;
         gap: 15px;
@@ -121,6 +131,7 @@ nav{
     /* left-side nav */
     .left-nav{
         gap: 3px;
+        flex-shrink: 0;
     }
     /* mann vaasam image */
     .mann-img{
@@ -139,17 +150,23 @@ nav{
     }
     /* right-side nav */
     .right-nav{
-        gap: 20px;
-        flex-shrink: 0;
+        gap: 5px;
+        flex: 1;
+        min-width: 0;
     }
 /* searchbox */
 #search{
-    width: 140px;
+    width: 100%;
     border-radius: 6px;
     border: 1px solid white;
     padding: 6px 8px 6px 25px;
     font-size: 11px;
 }
+/* .search-box{
+    max-width: 250px;
+    min-width: 90px;
+    flex: 1 1 0;
+} */
 /* serach icon */
 .search-icon {
     position: absolute;
@@ -162,14 +179,16 @@ nav{
 /* overall anchor + icon + login button */
 .overall-anchor-icon-login{
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    flex-shrink: 0;
+    white-space: nowrap; 
 }
 /* anchor tags */
 .anchor{
     font-size: 11px;
     font-weight: 400;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     padding: 5px;
 }
 /* login-button */
@@ -180,3 +199,4 @@ nav{
     width: 86px;
 }
 }
+
