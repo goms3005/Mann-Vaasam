@@ -18,7 +18,7 @@
 /* Overall Container */
 .container {
     min-height: 1000px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 /************************* Navigation Bar ***************************/
 nav{
@@ -73,6 +73,7 @@ nav{
     flex: 1;
     max-width: 305px;
     min-width: 120px;
+    margin-right: 20px;
 }
 /* searchbox */
 #search{
@@ -166,11 +167,11 @@ nav{
     padding: 6px 8px 6px 25px;
     font-size: 11px;
 }
-/* .search-box{
+.search-box{
     max-width: 250px;
     min-width: 90px;
-    flex: 1 1 0;
-} */
+    flex: 1;
+}
 /* serach icon */
 .search-icon {
     position: absolute;
@@ -209,38 +210,7 @@ nav{
 
     .full-nav{
         padding: 0px 20px;
-    }
-    .anchor{
-        display: none;
-    }
-    .overall-anchor-icon-login{
-        position: fixed;
-        left: 100%;
-        top: 80px;
-        width: 100%;
-        height: 80vh;
-        background-color:cadetblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        transition: 0.4s;
-        
-    }
-    .anchor{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        color: white;
-        font-size: 22px;
-    }
-    .login-button{
-        display: block;
-    }
-    .overall-anchor-icon-login.show-menu{
-        left: 0;
+        gap: 10px;
     }
     .mann{
         display: none;
@@ -250,7 +220,45 @@ nav{
         color: white;
         font-size: 25px;
     }
-    button{
-        display: none;
+    .right-nav{
+        justify-content: end;
+        gap: 5px;
+    }
+    .search-box{
+        max-width: none; /* 305px lock ah thookidu */
+        min-width: 0;
+        flex: 1;
+        margin-right: 10px;
+    }
+    .overall-anchor-icon-login{
+        position: fixed;
+        left: 100%;
+        top: 83px;
+        width: 100%;
+        height: 85vh;
+        background-color:antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: 0.4s;
+        
+    }
+    .overall-anchor-icon-login.show-menu{
+        left: 0;
+    }
+    .anchor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        color: black;
+        font-size: 22px;
+    }
+    .login-button{
+        display: block;
+        background-color:rgb(194, 227, 238);
+        border: 1px solid black;
     }
 }
