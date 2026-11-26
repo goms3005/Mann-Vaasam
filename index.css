@@ -96,6 +96,10 @@ nav{
     color: white;
     opacity: 0.8; 
 }
+/* menubar */
+.menu{
+    display: none;
+}
 /* overall anchor + icon + login button */
 .overall-anchor-icon-login{
     display: flex;
@@ -122,7 +126,7 @@ nav{
     padding: 5px;
     border: none;
 }
-/************************************ Tablet screen ****************************************/
+/************************************ Tablet Responsive ****************************************/
 @media only screen and (min-width:601px) and (max-width:900px) {
     .full-nav{
         padding: 0px 20px;
@@ -199,4 +203,54 @@ nav{
     width: 86px;
 }
 }
+/***************************************** MOBILE Responsive *************************************/
 
+@media only screen and (min-width:300px) and (max-width:600px){
+
+    .full-nav{
+        padding: 0px 20px;
+    }
+    .anchor{
+        display: none;
+    }
+    .overall-anchor-icon-login{
+        position: fixed;
+        left: 100%;
+        top: 80px;
+        width: 100%;
+        height: 80vh;
+        background-color:cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: 0.4s;
+        
+    }
+    .anchor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        color: white;
+        font-size: 22px;
+    }
+    .login-button{
+        display: block;
+    }
+    .overall-anchor-icon-login.show-menu{
+        left: 0;
+    }
+    .mann{
+        display: none;
+    }
+    .menu{
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    button{
+        display: none;
+    }
+}
