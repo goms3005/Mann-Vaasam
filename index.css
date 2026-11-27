@@ -2,6 +2,11 @@
 /* Krona One Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+/* Cantora One Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+/* Inter Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 
 /* Universal Selector */
@@ -126,6 +131,77 @@ nav{
     text-align: center;
     padding: 5px;
     border: none;
+}
+/*************************** Home Section *************************/
+.home-section{
+    min-height: 100vh;
+}
+.home-txt{
+    background-image: url("veg-image.jpg");
+    background-size: cover;
+    position: relative;
+    background-position:center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 60px;
+}
+.natural p{
+    color: white;
+    background-color: #F27F13;
+    font-size: 16px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline;
+    padding: 4px 20px;
+    font-weight: 400;
+}
+.home-txt .title{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.home-txt .heading{
+    font-size: 52px;
+    font-family: "Cantora One", sans-serif;
+}
+.home-txt .sub-heading{
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.home-txt .des{
+    font-size: 27px;
+    font-family: "Inter", sans-serif;
+    /* background-color: #6D3501; */
+    max-width: 700px;
+    width: 100%;
+    letter-spacing: 4%;
+    line-height: 39px;
+}
+.btn{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.btn button{
+    color: white;
+    border-radius: 25px;
+    font-size: 22px;
+}
+.btn :first-child{
+    background-color: #EB8704;
+    padding: 5px 30px;
+    border: none;
+}
+.btn :nth-child(2){
+    padding: 10px 20px;
+    border: 2px solid #23EB04;
+    background-color:rgb(123, 165, 82);
 }
 /************************************ Tablet Responsive ****************************************/
 @media only screen and (min-width:601px) and (max-width:900px) {
